@@ -1,0 +1,604 @@
+<html>
+<head>
+   
+ <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">        
+</head>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: bisque;
+        }
+
+
+/* *****header****** */
+        header {
+            width: 100%;
+            background-color: rgb(46, 23, 4);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 35px;
+            min-height: 110px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+
+        /* logo */
+
+        #Name {
+            color: rgb(255, 255, 154);
+            font-size: 48px;
+        }
+
+
+/* NAVIGATION */
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            font-size: 22px;
+        }
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+            color: rgb(233, 182, 141);
+            transform: scale(1.08);
+        }
+
+        #home {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url("images/cafe5.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .hero-text {
+            font-size: 80px;
+            font-weight: bolder;
+            color: black;
+            transition: 0.5s;
+        }
+
+
+        .hero-text:hover {
+            color: rgb(233, 182, 141);
+            transform: scale(1.05);
+            text-shadow: 3px 3px 10px rgb(128, 17, 17);
+        }
+
+    /* MENU */
+        
+        .coffee {
+            background-color: rgb(169, 67, 9);
+            border-radius: 10%;
+            height: 500px;
+            width: 90%;
+            margin: 4%;
+            padding: .5%;
+            justify-content: center;
+            border: 5px solid rgb(101, 44, 0);
+            align-items: center;
+            display: flex;
+            gap: 15px;
+        }
+
+        .mhead {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(101, 44, 0);
+            background-color: rgb(233, 182, 141);
+            height: 75px;
+        }
+
+        .espresso {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5sec;
+        }
+
+        .espresso:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .americano {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .americano:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .cuppuccino {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cuppuccino:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .latte {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .latte:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+         .bites {
+            background-color: rgb(169, 67, 9);
+            border-radius: 10%;
+            height: 500px;
+            width: 90%;
+            margin: 4%;
+            padding: .5%;
+            justify-content: center;
+            border: 5px solid rgb(101, 44, 0);
+            align-items: center;
+            display: flex;
+            gap: 15px;
+        }
+
+        .cheesecigars {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5sec;
+        }
+
+        .cheesecigars:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .paneer {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .paneer:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .nachos {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nachos:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .corn {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .corn:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+         .sweets {
+            background-color: rgb(169, 67, 9);
+            border-radius: 10%;
+            height: 500px;
+            width: 90%;
+            margin: 4%;
+            padding: .5%;
+            justify-content: center;
+            border: 5px solid rgb(101, 44, 0);
+            align-items: center;
+            display: flex;
+            gap: 15px;
+        }
+
+
+        .tiramisu {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5sec;
+        }
+
+        .tiramisu:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .brownie {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .brownie:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .cheesecake {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cheesecake:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .churros {
+            background-color: bisque;
+            border: 2px solid rgb(101, 44, 0);
+            border-radius: 10%;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .churros:hover {
+            color:rgb(101, 44, 0);
+            transform: scale(1.05);
+        }
+
+        .hbc {
+            font-size: 40px;
+            color: rgb(101, 44, 0);
+            background-color: rgb(233, 182, 141);
+            width: 100%;
+        }
+
+        img {
+            height: 90px;
+            width: 100px;
+            border-radius: 10%;
+        }
+
+
+        #find {
+            background-color: rgb(101, 44, 0);
+            height: 30%;
+            width: 100%;
+            padding: .5%;
+        }
+
+        .fs {
+            color: rgb(255, 255, 154);
+            font-weight: bolder;
+        }
+
+        .web {
+
+        }
+
+        #about {
+           text-align: center;
+           font-weight: bolder;
+           font-size: 20px;
+        }
+
+    </style>
+
+
+
+<body>
+
+<!-- header header  header -->
+
+    <header>
+
+        <div id="Name"> ☾LUNA_SOCIAL</div>
+
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#find">Find Us</a>
+        </nav>
+
+    </header>
+
+
+   <!-- home home home -->
+
+    <section id="home">
+        <div class="hero-text">
+            COME FOR THE COFFEE.<br>
+            STAY FOR THE VIBE.
+        </div>
+    </section>
+
+    
+    <!-- menu menu menu -->
+
+    <section>
+        <h1 class="mhead">MENU</h1>
+<div id="menu">
+
+<div class="hbc">
+    <h3>☕COFFEE</h3>
+    <!-- <em>"Bold brews, smooth pours, made for your everyday pause."</em> -->
+</div>
+
+        <div class="coffee">
+            <div class="espresso">
+                <img src="images/espresso.jpg">
+                <br>
+                <div>
+                <h4>Espresso — ₹120</h4>
+                <p>Rich, bold, and beautifully balanced <br>
+                    — a smooth shot of pure coffee perfection.</p>
+            </div></div>
+
+            <div class="americano">
+                <img src="images/americano"> <br>
+                <h4>Americano — ₹150</h4>
+                <p> A bold espresso mellowed with hot <br>
+                    water for a smooth, classic cup.</p>
+            </div>
+
+        <div class="cuppuccino">
+            <img src="images/cuppaccino"><br>
+            <h4>Cuppuccino — ₹180</h4>
+            <p> Velvety espresso topped with airy milk <br>
+                foam for the perfect balance of bold and creamy.</p>
+        </div>
+
+        <div class="latte">
+            <img src="images/latte"><br>
+            <h4>Café Latte — ₹190</h4>
+            <p> Smooth espresso blended with silky <br>
+                steamed milk for a soft, comforting sip.</p>
+        </div>
+        </div>
+
+        <div class="hbc">
+        <h3>🥐LUNA BITES</h3>
+</div>
+
+        <div class="bites">
+          
+            <div class="cheesecigars">
+                <img src="images/cheese cigars"> <br>
+                <h4>Luna Cheese Cigars — ₹249</h4>
+                <p>crispy pastry rolls filled with herbed <br>
+                   cheese, served with chilli dip</p>
+            </div>
+
+            <div class="paneer">
+                <img src="images/paneer bites"> <br>
+                <h4>Peri-Peri Paneer Bites — ₹269</h4>
+                <p>crispy paneer tossed in smoky peri <br>
+                   -peri seasoning </p>
+            </div>
+
+            <div class="nachos">
+                <img src="images/nachos"> <br>
+                <h4>Loaded Nachos — ₹289</h4>
+                <p>tortilla chips with cheese, <br>
+                   salsa, jalapeños & sour cream </p>
+            </div>
+
+            <div class="corn">
+                <img src="images/corn"> <br>
+                <h4>Luna Crispy Corn Cups — ₹249</h4> 
+                <p>golden crispy corn tossed with chilli, <br>
+                   lime, herbs & a creamy smoky dip </p>
+            </div>
+        </div>
+
+        <div class="hbc">
+        <h3>🍰LUNA SWEETS</h3>
+        </div>
+
+        <div class="sweets">
+            
+            <div class="tiramisu">
+                <img src="images/tiramisu"> <br>
+                <h4>Luna Tiramisu Cup — ₹299</h4>
+                <p>creamy mascarpone, espresso <br>
+                   -soaked sponge & cocoa </p>
+            </div>
+
+            <div class="brownie">
+                <img src="images/brownie"> <br>
+                <h4>Chocolate Fudge Brownie — ₹279</h4>
+                <p>warm, rich chocolate brownie with vanilla <br>
+                   ice cream </p>
+            </div>
+
+            <div class="cheesecake">
+                <img src="images/chessecake"> <br>
+                <h4>Lotus Biscoff Cheesecake — ₹299</h4>
+                <p>creamy cheesecake with a caramelised <br>
+                   Biscoff crust </p>
+            </div>
+
+            <div class="churros">
+                <img src="images/churros"> <br>
+            <h4>Mini Churros — ₹249</h4>
+            <p>cinnamon-sugar churros with chocolate dip</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- about about about -->
+
+    <section id="about">
+        <h1 class="hbc">About Us</h1>
+         <div class="ac">
+      <p class="ah">OUR LITTLE CORNER OF THE WORLD</p>
+
+      <h2>
+        A little coffee,<br/>
+        a little moonlight.
+      </h2>
+
+      <div></div>
+
+      <p>
+        Welcome to Luna Socials — where good coffee
+        meets good company.
+      </p>
+
+      <p>
+        We believe the best moments are often the
+        simplest ones. A warm cup of coffee, laughter
+        with your favorite people, and conversations
+        that make you forget about time.
+      </p>
+
+      <p>
+        More than just a cafe, Luna Socials is your
+        little escape from the everyday hustle.
+        A space to slow down, connect, create memories,
+        and enjoy the magic in ordinary moments.
+      </p>
+
+      <p>
+        Come for the coffee. Stay for the feeling.
+      </p>
+
+    </div>
+    </section>
+
+    <!-- find find find -->
+
+    <section id="find">
+        <div>
+           <div class="fs"><h1>FIND US</h1>
+            <p>Xyz Colony, New Delhi <br>
+               Delhi, 1100xx
+            </p>
+            <h3>Contact</h3></div>
+            <div class="web"><a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.whatsapp.com"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.google.com"><i class="bi bi-google"></i></a>
+            <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a></div>
+        </div>
+    </section>
+</body>
+</html>
